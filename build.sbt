@@ -1,7 +1,7 @@
 name := "som"
 
-val sparkVersion = "2.0.2"
-val breezeVersion = "0.11.2"
+val sparkVersion = "2.2.0"
+//val breezeVersion = "0.11.2"
 val scalatestVersion = "2.2.4"
 val slf4jVersion = "1.7.21"
 val scalametaVersion = "1.1.0"
@@ -18,7 +18,7 @@ lazy val commonSettings = Seq(
 lazy val somSettings = Seq(
   version := "0.1.0-SNAPSHOT",
   libraryDependencies ++= Seq(
-    "org.scalanlp" % "breeze-viz_2.11" % breezeVersion,
+    "org.scalanlp" % "breeze-viz_2.11" % "0.11.2",
     "org.slf4j" % "slf4j-api" % slf4jVersion,
     "org.scalatest" %% "scalatest" % scalatestVersion % "test",
     "org.apache.spark" %% "spark-core" % sparkVersion % "provided",
